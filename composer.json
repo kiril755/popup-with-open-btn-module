@@ -1,0 +1,21 @@
+{
+    "name": "kiril755/popup-with-open-btn-module",
+    "description": "Magento 2 popup module, w/ open btn. Can chose image for open btn and add specific csm block for popup",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "php": "^7.2.0|^8.1.0",
+        "magento/framework": ">=102.0"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Base\\PopupModule\\": ""
+        }
+    }
+}

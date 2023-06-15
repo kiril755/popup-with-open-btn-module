@@ -1,0 +1,23 @@
+<?php
+/**
+ * @var \Base\PopupModule\Block\Popup $block
+ */
+?>
+
+<div class="popup_general_open-btn">
+    <?php if ($block->getImageForPopup() !== ''): ?>
+        <img src="<?php echo $block->getBaseUrlMedia() . 'popup/image/default/' . $block->getImageForPopup(); ?>" alt="">
+    <?php else: ?>
+        <img src="<?php echo $block->getViewFileUrl('Base_PopupModule::images/circle.png') ?>" alt="circle">
+    <?php endif; ?>
+</div>
+<div class="popup_general"></div>
+<script type="text/x-magento-init">
+            {
+                "*": {
+                    "Base_PopupModule/js/popup-open" : {
+                        "cmsBlock": "<?php echo $block->escapeJs($block->getBlockFromScope()); ?>"
+                    }
+                }
+            }
+</script>
